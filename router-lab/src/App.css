@@ -1,0 +1,107 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+body {
+  font-family: 'Comic Neue', cursive, sans-serif;
+  background-color: #fff5f7; 
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+
+h1, h2, h3 {
+  color: #d14d72; 
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+
+button, .MuiButton-contained {
+  background-color: #ffb3c6 !important; 
+  color: white !important;
+  border-radius: 20px !important;
+  padding: 8px 20px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+}
+
+button:hover, .MuiButton-contained:hover {
+  background-color: #ff8fab !important; 
+  transform: translateY(-2px) !important;
+}
+
+.MuiButton-outlined {
+  border-color: #ffb3c6 !important;
+  color: #d14d72 !important;
+}
+
+
+.MuiCard-root {
+  border-radius: 15px !important;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: #fff9fb !important;
+  border: 1px solid #ffccd5 !important;
+}
+
+.MuiCard-root:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(255, 179, 198, 0.3) !important;
+}
+
+
+.MuiTableContainer-root {
+  border-radius: 15px !important;
+  overflow: hidden;
+  background-color: #fff9fb !important;
+  border: 1px solid #ffccd5 !important;
+}
+
+.MuiTableCell-head {
+  background-color: #ffb3c6 !important;
+  color: white !important;
+}
+
+.MuiTableRow-root:nth-of-type(even) {
+  background-color: #fff0f3 !important;
+}
+
+
+a {
+  color: #d14d72;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff8fab;
+  text-decoration: underline;
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+
+.pink-gradient-bg {
+  background: linear-gradient(135deg, #fff5f7 0%, #ffdfe5 100%);
+}
+
+
+.alert-message {
+  background-color: #ffccd5;
+  border-left: 5px solid #d14d72;
+  padding: 15px;
+  border-radius: 0 8px 8px 0;
+}
